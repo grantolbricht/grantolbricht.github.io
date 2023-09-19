@@ -16,8 +16,8 @@ body {
       }
 
      h2 {
-       <span class="italic">Italic Text</span>
        font-size: 1.5em;
+       font-style: italic;
 
       }
 
@@ -35,3 +35,8 @@ body {
      a:hover {
      color: green;
      }
+
+    .contact {
+        border: solid 2px purple
+
+    }

@@ -18,7 +18,7 @@ html {
 
 /* Rulesets to be matched up with selectors */
 
-.card {
+ .card {
   width: 35em;
   height: 22em;
   margin: 5em auto;
@@ -28,8 +28,10 @@ html {
 }
 
 .card header {
+    margin: 0;
   background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
   border-radius: 1.5em 1.5em 0 0;
+  height:
 }
 
 .card footer {
@@ -37,7 +39,9 @@ html {
   border-radius: 0 0 1.5em 1.5em;
 }
 
-.card article img{
-  max-height: 100%
+.card article img {
+    margin: 0;
+  max-height: 100%;
   float: right;
+  height: 7.5em;
 } 

@@ -28,31 +28,36 @@ html {
   height:3.125em;
   padding: 0.94em;
 }
-.card header h2 {
+.h2 {
   font-size: 2em;
   height: 1.875em;
+  padding: 0.94em;
 }
 
 .card footer {
   background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
   border-radius: 0 0 1.5em 1.5em;
-  font:1.5em;
+  font:1.25em;
   height: 3.125em;
   padding: 0.94;
+}
+
+.card footer p {
+  font-size: 1.5em;
+  height: 1em;
+  padding: 1em;
+  padding-top:3em;
 }
 
 .card article img {
     margin: 0;
   max-height: 100%;
   float: right;
-  height: 7.5em;
-  background-color: transparent;
+  height: 12em;
+  background-color: rgb(255, 0, 0);
 } 
 
 .card article{
-  color:black;
-}
-
-.card header, .card footer{
-  height: 3.125em;
+  color:white;
+  padding-left:1em;
 }

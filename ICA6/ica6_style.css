@@ -16,6 +16,11 @@ article {
   height: 297mm;
   margin: 20px auto;
   position: relative;
+  background-image: url(top-image.png);
+  background-repeat: no-repeat;
+  background-color: white;
+  border-top: 1mm solid red;
+  border-bottom: 1mm solid red;
 }
 
 address {
@@ -28,14 +33,15 @@ h1 {
   position: absolute;
   top: 12mm;
   left: 20mm;
-  width: 128px;
-  height: 128px;
+  width: 0px;
+  height: 0px;
   font-size: 20px;
   letter-spacing: 1px;
   text-align: center;
-  padding: 44px 0;
+  padding: 0px 0;
   color: white;
   text-shadow: 1px 1px 1px black;
+  background-image: url(logo.png);
 }
 
 /* Your CSS below here */

@@ -19,8 +19,8 @@ article {
   background-image: url(top-image.png);
   background-repeat: no-repeat;
   background-color: white;
-  border-top: 1mm solid red;
-  border-bottom: 1mm solid red;
+  border-top: 1mm red;
+  border-bottom: 1mm  red;
 }
 
 address {
@@ -41,7 +41,7 @@ h1 {
   padding: 0px 0;
   color: white;
   text-shadow: 1px 1px 1px black;
-  background-image: url(logo.png);
+  background-image:url(logo.png);
 }
 
 /* Your CSS below here */

@@ -11,6 +11,7 @@ body {
     height: 200px;
     width: 150px;
     font-size: 20px;
+    text-align: center;
   }
 #box2 {
     position: fixed;
@@ -21,6 +22,7 @@ body {
     height: 200px;
     width: 150px;
     font-size: 20px;
+    text-align: center;
   }
   #box3 {
     position: fixed;
@@ -31,4 +33,10 @@ body {
     height: 30px;
     width: 300px;
     font-size: 10px;
+  }
+  #box4 {
+    position:fixed;
+    bottom: 20px;
+    right: 50px;
+    font-size: large;
   }

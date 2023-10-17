@@ -6,6 +6,9 @@ body{
     height: 20vh;
     background-color: indianred;
 }
+#box1:hover {
+    background-color: purple;
+}
 
 
 #box2{
@@ -13,8 +16,19 @@ body{
     height:20vh;
     position: relative;
     background-color: orangered;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-name: box2move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+
 }
 
 @keyframes box2move{
-
-}
+    from {top: 15vw;
+        left:0vw};
+    }
+    to {
+        bottom: 20vw;
+        right: 20vw};
+    

@@ -1,0 +1,56 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: gray;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+nav{
+    height: 50vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:20px;
+    background-color: orangered;
+}
+nav a{
+    width:10vw;
+    text-align: center;
+    text-decoration: none;
+    color:blue;
+}
+
+
+img{
+    width:30vw;
+    height: 30vh;
+}
+
+#red-ball{
+    background-color: blue;
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+    position: absolute;
+    left:5vw;
+    top:0;
+}
+
+#red-ball:hover {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    
+}
+.title {
+    animation: 3s infinite alternate title;
+}
+@keyframes title {
+    from {
+        margin-left: 100%;
+    }
+    to {
+        margin-left: 0%;
+    }
+}

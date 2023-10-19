@@ -37,7 +37,7 @@ p {
     }
 }
 
-#hover {
+#red-ball {
     font-size: 5vw;
     transition-property: font-size;
     transition-duration: 3s;

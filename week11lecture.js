@@ -31,7 +31,7 @@ function draw(){
         ctx.arc(
             random(canvas.width),
             random(canvas.height),
-            random(100),
+            random(200),
             0,
             2 * Math.PI,
         );

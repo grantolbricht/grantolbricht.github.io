@@ -34,11 +34,12 @@ btn.addEventListener("click", ()=>{
         btn.setAttribute("class", "light");
         btn.textContent = "lighten";
         overlay.style.backgroundcolor = "rgba(0,0,0,0.5)";
+        return
     }
     if (btn.getAttribute("class") == "light") {
         btn.setAttribute("class", "dark");
         btn.textContent = "darken";
-        overlay.style.backgroundcolor= "rgba(0,0,0,0"
+        overlay.style.backgroundcolor= "rgba(0,0,0,0)";
         return
     }
 })

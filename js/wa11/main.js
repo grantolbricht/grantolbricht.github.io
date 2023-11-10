@@ -34,12 +34,12 @@ btn.addEventListener("click", () => {
         btn.setAttribute("class", "light");
         btn.textContent = "lighten";
         overlay.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
-        displayedImage.classList.add("darken"); // Add the "darken" class
+        displayedImage.classList.add("darken"); 
     } else if (btn.getAttribute("class") == "light") {
         btn.setAttribute("class", "dark");
         btn.textContent = "darken";
         overlay.style.backgroundColor = "rgba(0, 0, 0, 0)";
-        displayedImage.classList.remove("darken"); // Remove the "darken" class
+        displayedImage.classList.remove("darken"); 
     }
 });
 

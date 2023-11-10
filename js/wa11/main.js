@@ -29,19 +29,18 @@ function displayImage() {
     newImage.addEventListener("click", displayImage);
 }
 
-btn.addEventListener("click", ()=>{
-    if (btn.getAttribute("class") == "dark") { 
+btn.addEventListener("click", () => {
+    if (btn.getAttribute("class") == "dark") {
         btn.setAttribute("class", "light");
         btn.textContent = "lighten";
-        overlay.style.backgroundcolor = "rgba(0,0,0,0.5)";
-        return
-    }
-    if (btn.getAttribute("class") == "light") {
+        overlay.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+        displayedImage.classList.add("darken"); // Add the "darken" class
+    } else if (btn.getAttribute("class") == "light") {
         btn.setAttribute("class", "dark");
         btn.textContent = "darken";
-        overlay.style.backgroundcolor= "rgba(0,0,0,0)";
-        return
+        overlay.style.backgroundColor = "rgba(0, 0, 0, 0)";
+        displayedImage.classList.remove("darken"); // Remove the "darken" class
     }
-})
+});
 
 /* Wiring up the Darken/Lighten button */

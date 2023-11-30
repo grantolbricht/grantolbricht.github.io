@@ -26,6 +26,7 @@ class Ball {
     this.velY = velY;
     this.color = color;
     this.size = size;
+    this.number = random(0,9);
   }
 
 draw() {
@@ -33,6 +34,12 @@ draw() {
   ctx.fillStyle = this.color;
   ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
   ctx.fill();
+
+  ctx.fillStyle = 'black'; // You can adjust the color of the text
+  ctx.font = '16px Arial'; // You can adjust the font size and type
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillText(this.number, this.x, this.y);
   } 
   
   update() {

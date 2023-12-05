@@ -67,7 +67,9 @@ livingWage();
 const wfh = ["Anna", "Sam"];
 for (let i=0; i<HR["Employees"].length; i++) {
     if (wfh.includes(HR["Employees"][i]["name"]) ){
-        HR["Employees"][i]["wfh"]="Anna","Sam"
+        HR["Employees"][i]["wfh"]= true;
+    } else{
+        HR["Employees"][i]["wfh"]= false;
     }
 }
 console.log(HR["Employees"])

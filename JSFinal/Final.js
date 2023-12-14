@@ -58,8 +58,8 @@ while (balls.length < 35) {
   const ball = new Ball(
     random(0 + size, width - size),
     random(0 + size, height - size),
-    random(-3, 3),
-    random(-3, 3),
+    random(1, 5),
+    random(1, 5),
     randomRGB(),
     size,
   );
@@ -105,7 +105,7 @@ function handleClick(event) {
 }
 
 function drawClickedNumbers() {
-  const startIndex = Math.max(clickedBalls.length-10,0);
+  const startIndex = Math.max(clickedBalls.length - 10, 0);
 
   for (let i = startIndex; i < clickedBalls.length; i++) {
     const clickedBall = clickedBalls[i];
@@ -115,7 +115,7 @@ function drawClickedNumbers() {
     ctx.textAlign = 'center';
     ctx.textBaseline = 'top';
 
-    const textX = width / 2 + (i-startIndex) * 30;
+    const textX = width / 2 + (i - startIndex) * 30;
     const textY = 50;
     ctx.fillText(clickedBall.number, textX, textY);
   }
@@ -132,11 +132,31 @@ function clearCanvas() {
   drawClickedNumbers();
 }
 
-document.getElementById('clearButton').addEventListener('click', function() {
-  shouldRunAnimation = false
+document.getElementById('clearButton').addEventListener('click', function () {
+  shouldRunAnimation = false;
   clearClickedNumbers();
   shouldRunAnimation = true;
 });
+
+document.getElementById('submitButton').addEventListener('click', function () {
+  // Simulate a canvas click when the submit button is clicked
+  const fakeEvent = {
+    clientX: canvas.offsetLeft + canvas.width / 2,
+    clientY: canvas.offsetTop + canvas.height / 2,
+  };
+  handleClick(fakeEvent);
+  displayPickedNumbers();
+});
+
+function displayPickedNumbers() {
+  // Display the last 10 picked numbers in an alert box
+  const startIndex = Math.max(clickedBalls.length - 10, 0);
+  const endIndex = clickedBalls.length;
+  const last10Numbers = clickedBalls.slice(startIndex, endIndex).map(ball => ball.number);
+
+  const message = `Phone Number: ${last10Numbers.join(' ')}`;
+  alert(message);
+}
 
 canvas.addEventListener('click', handleClick);
 

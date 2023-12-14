@@ -28,9 +28,21 @@ h1 {
   margin-bottom: 10px; /* Adjust the margin as needed */
 }
 
+#clearButton, #submitButton {
+  margin-top: 10px; /* Add margin between buttons */
+}
+
 #clearButton {
   position: absolute;
   top: 10px;
   right: 10px;
-  color: rgb(243, 237, 237);
+  color: rgb(1, 0, 0);
+}
+
+#submitButton {
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  color: rgb(0, 0, 0);
+
 }
